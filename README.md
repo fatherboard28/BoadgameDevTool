@@ -10,8 +10,6 @@ It includes the following features:
 
 You have full access to source code when you buy the assset on [insert asset store link] and are encouraged to modify the code to fit your exact needs. If you have any issues contact me at <fatherboard28@gmail.com>
 
----
-
 # WIKI
 
 This is the documentation of what the project supports and is capable of doing.
@@ -30,7 +28,27 @@ In order to do this open the _NodeTypeMaker_ tool. On the top of the Unity Edito
 It should bring up the following window:
 ![Node Type Maker Window!](/NodeTypeMakerWindow.png "Node Type Maker Window")
 
-A Node Type has two parts an extended class and a Scriptable Object. The class is an extension of the _Node_ class and implements the _OnLand()_ method. The Scriptable Object part stores data for the Node. This tool automatically creates both of these for you. All you need to do is fill in the data. Give it a Name (System.string), a Mesh (UnityEngine.Mesh), and a list of _Materials_ (UnityEngine.Material). All of this information is editable later on in the Scriptable Object. Once you hit the _Make Node Type_ button it will create those two files and place them in the folder "Assets/NodeTypes". The two files will be labeled: "<Name>Node.cs" for the extended _Node_ script and "<Name>NodeData.asset" for the Scriptable Object. Note: you do not need to make this folder the tool will do that for you.
+A Node Type has two parts an extended class and a Scriptable Object. The class is an extension of the _Node_ class and implements the _OnLand()_ method. The Scriptable Object part stores data for the Node. This tool automatically creates both of these for you. 
 
-If you have a desired effect or feature to happen when a player lands on this node then put that code inside of the _OnLand()_ method for the respective NodeType. It passes in the _Player_ object that lands on the node as well. 
+All you need to do is the following: 
+(1) Give it a Name (System.string)
+(2) Give it a Mesh (UnityEngine.Mesh)
+(3) Give it a list of _Materials_ (UnityEngine.Material). 
+
+Note: All of this information is editable later on in the Scriptable Object. 
+
+Once you hit the _Make Node Type_ button it will create two files in the folder "Assets/NodeTypes":
+  - "<Name>Node.cs" | Extended _Node_ script
+  - "<Name>NodeData.asset" | Scriptable Object 
+
+Note: you do not need to make this folder the tool will do that for you.
+
+The Extended _Node_ Script will look something like this:
+![Extended Node Script!](/NodeScript.png "Extended Node Script")
+
+If you have a desired effect or feature to happen when a player lands on this node then put that code inside of the _OnLand()_ method for the respective NodeType. 
+```C#
+Player player
+```
+is the player object that landed on the node so if you need to access any information in that then you can.
 
