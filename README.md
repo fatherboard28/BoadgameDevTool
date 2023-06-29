@@ -30,10 +30,10 @@ It should bring up the following window:
 
 A Node Type has two parts an extended class and a Scriptable Object. The class is an extension of the _Node_ class and implements the _OnLand()_ method. The Scriptable Object part stores data for the Node. This tool automatically creates both of these for you. 
 
-All you need to do is the following: 
-  (1) Give it a Name (System.string)
-  (2) Give it a Mesh (UnityEngine.Mesh)
-  (3) Give it a list of _Materials_ (UnityEngine.Material). 
+All you need to do is the following: <br>
+  (1) Give it a Name (System.string)<br>
+  (2) Give it a Mesh (UnityEngine.Mesh)<br>
+  (3) Give it a list of _Materials_ (UnityEngine.Material).<br> 
 
 Note: All of this information is editable later on in the Scriptable Object. 
 
