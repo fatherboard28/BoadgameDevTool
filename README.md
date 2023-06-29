@@ -31,15 +31,15 @@ It should bring up the following window:
 A Node Type has two parts an extended class and a Scriptable Object. The class is an extension of the _Node_ class and implements the _OnLand()_ method. The Scriptable Object part stores data for the Node. This tool automatically creates both of these for you. 
 
 All you need to do is the following: 
-(1) Give it a Name (System.string)
-(2) Give it a Mesh (UnityEngine.Mesh)
-(3) Give it a list of _Materials_ (UnityEngine.Material). 
+  (1) Give it a Name (System.string)
+  (2) Give it a Mesh (UnityEngine.Mesh)
+  (3) Give it a list of _Materials_ (UnityEngine.Material). 
 
 Note: All of this information is editable later on in the Scriptable Object. 
 
 Once you hit the _Make Node Type_ button it will create two files in the folder "Assets/NodeTypes":
-  - "<Name>Node.cs" | Extended _Node_ script
-  - "<Name>NodeData.asset" | Scriptable Object 
+  - "\<Name\>Node.cs" | Extended _Node_ script
+  - "\<Name\>NodeData.asset" | Scriptable Object 
 
 Note: you do not need to make this folder the tool will do that for you.
 
