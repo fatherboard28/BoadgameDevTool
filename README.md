@@ -31,9 +31,9 @@ It should bring up the following window:
 A Node Type has two parts an extended class and a Scriptable Object. The class is an extension of the _Node_ class and implements the _OnLand()_ method. The Scriptable Object part stores data for the Node. This tool automatically creates both of these for you. 
 
 All you need to do is the following: <br>
-  (1) Give it a Name (System.string)<br>
-  (2) Give it a Mesh (UnityEngine.Mesh)<br>
-  (3) Give it a list of _Materials_ (UnityEngine.Material).<br> 
+  - Give it a Name (System.string)<br>
+  - Give it a Mesh (UnityEngine.Mesh)<br>
+  - Give it a list of _Materials_ (UnityEngine.Material).<br> 
 
 Note: All of this information is editable later on in the Scriptable Object. 
 
@@ -56,4 +56,20 @@ public class <Name>Node : Node
 If you have a desired effect or feature to happen when a player lands on this node then put that code inside of the _OnLand()_ method for the respective NodeType. 
 
 `Player player` is the player object that landed on the node so if you need to access any information in that then use `player` inside of _OnLand()_.
+
+### Making The Board
+
+This task is done using the _NodeMaker_ Window. Access it by navigating to the top of the Editor and click on _BoardGameUtils_ then select _NodeMaker_ from the list of options.
+
+This tool creates a Node Game Object with a couple components attached. It loads the mesh, materials, and NodeType script from the NodeType you selected. It will place this Game Object as a child of a Map Game Object that the script will create. 
+
+It will open a window that looks like this:
+![Node Maker Window!](/NodeMaker.png "Node Maker Window")
+
+All you need to do is:
+  - Select a NodeType
+  - The nodes ID
+  - The adjacent Nodes
+
+The Node's ID and Type cannot be changed once the node is created but the Adjacent Nodes are changeable after creation. This can be done by using the _NodeEditor_ Window or in the Nodes Game Object in the scene.
 
