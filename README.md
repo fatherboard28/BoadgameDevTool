@@ -14,6 +14,8 @@ You have full access to source code when you buy the assset on [insert asset sto
 
 This is the documentation of what the project supports and is capable of doing.
 
+---
+
 ## Game Map Creation
 
 There are a couple components that go into creating a working map. It is not complicated if you already know what you want to implement, so I would suggest having an idea of what to make before trying to make it in Unity.
@@ -56,6 +58,8 @@ public class <Name>Node : Node
 If you have a desired effect or feature to happen when a player lands on this node then put that code inside of the _OnLand()_ method for the respective NodeType. 
 
 `Player player` is the player object that landed on the node so if you need to access any information in that then use `player` inside of _OnLand()_.
+
+---
 
 ### Making The Board
 
