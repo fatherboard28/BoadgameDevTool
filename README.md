@@ -44,11 +44,16 @@ Once you hit the _Make Node Type_ button it will create two files in the folder 
 Note: you do not need to make this folder the tool will do that for you.
 
 The Extended _Node_ Script will look something like this:
-![Extended Node Script!](/NodeScript.png "Extended Node Script")
+```CS
+public class <Name>Node : Node
+{
+  public override void OnLand(Player player)
+  {
+  }
+}
+```
 
 If you have a desired effect or feature to happen when a player lands on this node then put that code inside of the _OnLand()_ method for the respective NodeType. 
-```C#
-Player player
-```
-is the player object that landed on the node so if you need to access any information in that then you can.
+
+`Player player` is the player object that landed on the node so if you need to access any information in that then use `player` inside of _OnLand()_.
 
