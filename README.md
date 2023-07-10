@@ -4,17 +4,14 @@ This project is meant to serve as a spring board for any game that has a boardga
 It includes the following features:
   - Game Map creation
   - Customization of each node in the map
-  - Extendable Player class that works with the Game Map out-of-box
-  - Customizable turn system
-  - Movement on Game Map
+  - Some extra map features
 
 You have full access to source code when you buy the assset on [insert asset store link] and are encouraged to modify the code to fit your exact needs. If you have any issues contact me at <fatherboard28@gmail.com>
 
-# WIKI
+# Documentation
 
 This is the documentation of what the project supports and is capable of doing.
-
----
+All of the functionality is in the Editor window found by selecting the "BoardGameDevTool" tab at the top of the screen then selecting "Board Builder" from that menu.
 
 ## Game Map Creation
 
@@ -24,11 +21,9 @@ Once you know what you want to make these are the steps required to have a worki
   - Plan out roughly what the map will look like
   - Make the map in Unity using the _NodeMakerWindow_ tool
 
-### Making Node Types
+---
 
-In order to do this open the _NodeTypeMaker_ tool. On the top of the Unity Editor go to the _BoardGameUtils_ tab and select _NodeTypeMaker_ from the list of windows.
-It should bring up the following window:
-![Node Type Maker Window!](/NodeTypeMakerWindow.png "Node Type Maker Window")
+### Making Node Types (Node Type Maker)
 
 A Node Type has two parts an extended class and a Scriptable Object. The class is an extension of the _Node_ class and implements the _OnLand()_ method. The Scriptable Object part stores data for the Node. This tool automatically creates both of these for you. 
 
@@ -61,9 +56,7 @@ If you have a desired effect or feature to happen when a player lands on this no
 
 ---
 
-### Making The Board
-
-This task is done using the _NodeMaker_ Window. Access it by navigating to the top of the Editor and click on _BoardGameUtils_ then select _NodeMaker_ from the list of options.
+### Making The Board (Node Maker)
 
 This tool creates a Node Game Object with a couple components attached. It loads the mesh, materials, and NodeType script from the NodeType you selected. It will place this Game Object as a child of a Map Game Object that the script will create. 
 
@@ -72,8 +65,8 @@ It will open a window that looks like this:
 
 All you need to do is:
   - Select a NodeType
-  - The nodes ID
-  - The adjacent Nodes
+  - Set the nodes ID
+  - Set the adjacent Nodes
 
 The Node's ID and Type cannot be changed once the node is created but the Adjacent Nodes are changeable after creation. This can be done by using the _NodeEditor_ Window or in the Nodes Game Object in the scene.
 
