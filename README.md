@@ -11,7 +11,7 @@ You have full access to source code when you buy the assset on [insert asset sto
 # Documentation
 
 This is the documentation of what the project supports and is capable of doing.
-All of the functionality is in the Editor window found by selecting the "BoardGameDevTool" tab at the top of the screen then selecting "Board Builder" from that menu.
+All of the functionality is in the Editor window found by selecting the "BoardGameDevTool" window from the Window tab at the top of the Editor.
 
 ## Game Map Creation
 
